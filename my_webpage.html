@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adebisi Damilola Philip | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#languages">Programming Languages</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Adebisi Damilola Philip</span></h1>
+      <h2>Aspiring Web & Software Developer</h2>
+      <p>I love turning ideas into beautiful, interactive experiences.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Say Hello</a>
+        <a href="#projects" class="btn-outline">My Work</a>
+      </div>
+    </div>
+    <div class="hero-image">
+     <img src="https://i.postimg.cc/0j0h97Hh/Whats-App-Image-2025-07-25-at-17-15-04-bc9991e0.jpg" alt="Adebisi Damilola Philip">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Interests Section -->
+  <section id="interests" class="section">
+    <h2>Interests</h2>
+    <p>Website Development – I enjoy building websites from scratch and making them user-friendly and functional.</p>
+    <p>Exploring Modern Frameworks – I’m passionate about learning the latest tools and frameworks that make development efficient and exciting.</p>
+    <p>Tech Innovations – Keeping up with emerging trends and using technology to solve real-world problems is a driving force for me.</p>
+  </section>
+
+  <!-- Programming Languages Section -->
+  <section id="languages" class="section">
+    <h2>Programming Languages</h2>
+    <ul>
+      <li>HTML & CSS – for structuring and styling web pages</li>
+      <li>Python – for scripting and automation</li>
+      <li>Java – for object-oriented applications</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="section-content">
+      <h3>Hackathon Project</h3>
+      <p>An attempt at creating a personal profile webpage using only HTML and CSS.</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p>I am a graduate of The Oke Ogun Polytechnic, Saki, Oyo State, where I bagged a Higher National Diploma in Public Administration with Distinction.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:adepojusemilogo@gmail.com">adepojusemilogo@gmail.com</a></p>
+    <p>Phone: 07043921320, 08074558255</p>
+  </section>
+
+  <!-- Social Media Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/yourgithubusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourtwitterhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Adebisi Damilola Philip</p>
+  </footer>
+</body>
+</html>
