@@ -1,202 +1,191 @@
-/* Reset and base styles */
+/* General Styling */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #121212;
-  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-color: #121122;
+  color: #ffffff;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Navigation */
+nav {
+  background-color: #1a1a2e;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
-ul {
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Navigation */
-nav {
-  background-color: #1f1f2e;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav a {
-  color: #f06262;
+nav ul li a {
+  color: #ff6b6b;
+  text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: #ffffff;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-  padding: 4rem 2rem;
-  background-color: #1c1c2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #1c1c2b;
 }
 
 .hero-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero-text {
-  flex: 1;
-  padding-right: 2rem;
+  max-width: 600px;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
 }
 
 .hero-text h1 span {
-  color: #f06262;
+  color: #ff6b6b;
 }
 
 .hero-text h2 {
   font-size: 1.5rem;
   color: #cccccc;
-  margin-bottom: 1rem;
 }
 
 .hero-text p {
   font-size: 1rem;
-  color: #eee;
-  margin-bottom: 1.5rem;
+  margin-top: 10px;
+  color: #eeeeee;
 }
 
 .hero-buttons {
-  display: flex;
-  gap: 1rem;
+  margin-top: 20px;
 }
 
-.hero-buttons .btn {
-  background-color: #f06262;
-  padding: 0.75rem 1.5rem;
-  color: #fff;
+.btn, .btn-outline {
+  padding: 10px 20px;
+  margin-right: 10px;
   border-radius: 5px;
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.hero-buttons .btn-outline {
-  border: 2px solid #f06262;
-  padding: 0.75rem 1.5rem;
-  color: #f06262;
-  border-radius: 5px;
-  font-weight: bold;
+.btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
 }
 
-.hero-image {
-  flex: 0 0 250px;
-  display: flex;
-  justify-content: center;
+.btn-outline {
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+  background-color: transparent;
 }
 
+.btn:hover, .btn-outline:hover {
+  opacity: 0.9;
+}
+
+/* Hero Image */
 .hero-image img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  border: 5px solid #f06262;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff6b6b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
 }
 
 /* Sections */
 .section {
-  padding: 3rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .section h2 {
-  color: #f06262;
-  margin-bottom: 1rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
 }
 
 .section ul li {
-  margin-bottom: 0.5rem;
+  margin: 10px 0;
 }
 
 /* Footer */
 footer {
-  background-color: #1f1f2e;
-  padding: 2rem;
+  background-color: #1a1a2e;
+  padding: 20px;
   text-align: center;
 }
 
-.social-icons {
-  margin-bottom: 1rem;
-}
-
 .social-icons a {
-  color: #f06262;
-  margin: 0 1rem;
+  color: #ff6b6b;
+  margin: 0 10px;
   font-size: 1.5rem;
-  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
   color: #ffffff;
 }
 
-footer p {
-  font-size: 0.9rem;
-  color: #ccc;
-}
-
-/* Mobile Responsiveness */
+/* Responsive Layout */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
   .hero-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
-  .hero-text {
-    padding-right: 0;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+  .hero-text, .hero-image {
+    width: 100%;
   }
 
   .hero-image img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+    margin-top: 20px;
   }
 
-  .section {
-    padding: 2rem 1rem;
+  nav ul li {
+    display: block;
+    margin: 10px 0;
   }
 
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+  .btn, .btn-outline {
+    margin: 10px 5px;
   }
+}
+
+/* Special styling for the Download CV button */
+a.btn.download {
+  background-color: #28a745; /* Bootstrap green */
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+a.btn.download:hover {
+  background-color: #218838;
 }
